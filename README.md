@@ -1,6 +1,6 @@
 # jletteraddress.cls + VS Code devcontainer
 
-[ueokande/jletteraddress](https://github.com/ueokande/jletteraddress) に [korosuke613/texlive-ja-devcontainer-template](https://github.com/korosuke613/texlive-ja-devcontainer-template) を加えて簡単に使えるようにしました。
+[ueokande/jletteraddress](https://github.com/ueokande/jletteraddress) に [korosuke613/texlive-ja-devcontainer-template](https://github.com/korosuke613/texlive-ja-devcontainer-template) を加えて GitHub Actions で簡単に使えるようにしました。
 
 ## 使用方法1 (Webブラウザで完結)
 
@@ -52,7 +52,7 @@ code .
 
 その後、 `example.tex` または `addresses.json` を編集し、以下の手順を実行する
 
-1. 左下の><アイコンを押して、Reopen in container を実行する
+1. VS Code のウィンドウの左下の緑色の `><` アイコンを押して、Reopen in container を実行する
 2. Docker Image がビルドされるので待つ
 3. ワークスペースが開いたら、terminalを開き、`latexmk` を実行する
 4. `example.pdf` または  `out.pdf`  が生成される
