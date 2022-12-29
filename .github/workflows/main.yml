@@ -33,12 +33,12 @@ jobs:
       - name: Run container
         run: |
           docker compose -f .devcontainer/docker-compose.yml up -d
-         
       - name: Compile TeX
         run: |
            docker compose -f .devcontainer/docker-compose.yml exec ubuntu-texlive-ja latexmk
       - name: Commit files
         run: |
+          rm -r /home/runner/.gitconfig
           git config user.email "action@github.com"
           git config user.name "GitHub Action"
           git add example.pdf
