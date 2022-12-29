@@ -1,0 +1,39 @@
+{
+    "sender": {
+        "name": "千利休",
+        "address_a": "大阪府堺市堺区宿院町西一七",
+        "address_b": "宮寺町中尾グランド三〇五",
+        "postal_code": "9290334"
+    },
+    "recipients": [
+        {
+            "name": "織田　信長",
+            "title": "様",
+            "address_a": "香川県観音寺市大野原町井関一ー四ー一",
+            "address_b": "",
+            "postal_code": "7691621"
+        },
+        {
+            "name": "明智　光秀",
+            "title": "君",
+            "address_a": "香川県高松市鬼無町是竹一ー一一ー一二",
+            "address_b": "",
+            "postal_code": "7618021"
+        },
+        {
+            "name": "豊臣　秀吉",
+            "title": "ちゃん",
+            "address_a": "富山県富山市春日三ー五ー二〇",
+            "address_b": "春日ロイヤルパレス三一三",
+            "postal_code": "9392224"
+        },
+        {
+            "name": "徳川　家康",
+            "title": "先生",
+            "address_a": "宮崎県延岡市日の出町二ー一二ー二八",
+            "address_b": "ステーション日の出町三〇〇",
+            "postal_code": "6008425"
+        }
+    ]
+
+}
