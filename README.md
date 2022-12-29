@@ -1,51 +1,27 @@
-jletteraddress.cls
-==================
+# jletteraddress.cls + VS Code devcontainer
 
-日本のはがきの宛名面のための，LaTeXのドキュメントクラスです．
+[ueokande/jletteraddress](https://github.com/ueokande/jletteraddress) に [korosuke613/texlive-ja-devcontainer-template](https://github.com/korosuke613/texlive-ja-devcontainer-template) を加えて簡単に使えるようにしました。
 
-LaTeXを使用して，日本のはがきの宛名面を作成することができます．
-dvipdfmxを使っているなら，宛名はPDFのしおりに一覧表示することができます．
+## 使用方法
 
-![BDF bookmark](pdfbookmark.png)
+### 前提条件
 
+- Docker がインストールされている
+- VS Code に devcontainer 拡張機能がインストールされている
 
-Usage
------
+### 動作方法
 
-まず，ドキュメントクラスを，TeXドキュメントの先頭に記述します．
+以下のコマンドを実行して VS Code でこのリポジトリを開く
 
-``` tex
-\documentclass[]{jletteraddress}
+```sh
+git clone https://github.com/pn11/jletteraddress.git
+cd jletteraddress
+code .
 ```
 
-次に，差出人の名前，郵便番号，住所を，プリアンブルに記述します．
+- 左下の><アイコンを押して、Reopen in container を実行する
+- Docker Image がビルドされるので待つ
+- ワークスペースが開いたら、terminalを開き、latexmk sample.texを実行する
+- `example.pdf` が生成される
 
-``` tex
-\sendername{送り主 太郎}                   % Sender's name
-\senderaddressa{東京都千代田区1-2-3}       % Sender's address 1
-\senderaddressb{送り主マンション 九九九}   % Sender's address 2
-\senderpostcode{9999999}                   % Sender's postcode
-```
-
-これで．ドキュメントに受取人の情報を追加することができます．
-受取人を追加するには，`\addaddress`マクロを使用して，送り主の名前，郵便番号，そ
-して住所を，`\begin{document}`と`\end{document}`の間に指定します．
-
-``` tex
-\begin{document}
-  \addaddress
-      {名前}
-      {敬称}
-      {郵便番号}
-      {住所1}
-      {住所2}
-\end{document}
-```
-
-使用例は，example.texを参照してください．
-
-
-Licence
--------
-
-MIT
+スタイルファイルの使い方は[README_org.md](README_org.md) または[フォーク元](https://github.com/ueokande/jletteraddress)を参照。
