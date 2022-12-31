@@ -20,6 +20,12 @@ def main():
     with open('out.tex', 'w') as f:
         f.write(template.replace('@@SENDER@@', sender_text).replace('@@RECIPIENTS@@', recipients_text) + '\n')
 
+    with open('template_kansei.tex.txt') as f:
+        template = f.read()
+
+    with open('out_kansei.tex', 'w') as f:
+        f.write(template.replace('@@SENDER@@', sender_text).replace('@@RECIPIENTS@@', recipients_text) + '\n')
+
 
 if __name__ == '__main__':
     main()

@@ -58,3 +58,8 @@ code .
 4. `example.pdf` または  `out.pdf`  が生成される
 
 スタイルファイルの使い方は[README_org.md](README_org.md) または[フォーク元](https://github.com/ueokande/jletteraddress)を参照。
+
+### その他
+
+- 郵便番号がうまく枠内に入るように調整するのはそれなりに大変。手元のプリンターではふちあり印刷で98%で印刷するとちょうど良かった
+- `jletteraddress.cls` は年賀はがき用。官製はがきの場合は `jletteraddress_kansei.cls` を使う (差出人の郵便番号の位置が違う)
