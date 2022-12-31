@@ -4,7 +4,7 @@
 
 ## 使用方法1 (Webブラウザで完結)
 
-1. このリポジトリを fork する
+1. GitHub 上の `Use this template` を押し、リポジトリを fork する
 2. `example.tex` または `addresses.json` を編集し、コミットする
 3. GitHub Actions が動き `example.pdf` または `out.pdf` が生成される
 
